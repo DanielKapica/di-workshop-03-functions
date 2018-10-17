@@ -4,9 +4,9 @@ function setup() {
   }
   
   function draw() {
-    fill(255, 130, 0)
+    fill("red")
     stroke(0)
-    house(5, 30, 70, 0, 30, 40, 0, 80, 30)
+    house(5, 50, 80, 0, 50, 50, 0, 80, 50)
   }
 
   function square(x, y, size) {
