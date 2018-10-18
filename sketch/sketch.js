@@ -4,7 +4,7 @@ function setup() {
   }
   
   function draw() {
-    fill("red")
+    fill(blue)
     stroke(0)
     house(5, 50, 80, 0, 50, 50, 0, 80, 50)
   }
