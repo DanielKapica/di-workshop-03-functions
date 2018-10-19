@@ -28,7 +28,7 @@ function draw() {
     paddleColliding()
     ballColliding()
     text("Score: ", 220, 10)
-    text(score, 290, 10)
+    text(score, 260, 10)
   }else{
       text("YOU LOST! Your score was: ",10,50)
       text(score,50,75)
