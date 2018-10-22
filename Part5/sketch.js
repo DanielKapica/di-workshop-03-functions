@@ -1,7 +1,8 @@
 // Created by Daniel Kapica on 17/10/2018
 
 var ballX = 15
-var speed = 3
+var speedX = 3
+var speedY = 3
 var paddleY = 40
 var isPaddleColldingTop = false
 var isPaddleColldingBottom = false
@@ -49,14 +50,17 @@ function paddleColliding() {
 }
 
 function ballColliding() {
-    ballX = ballX + speed
+    ballX = ballX + speedX
     if ((ballY > paddleY && ballY < paddleY + paddleHeight && ballX < 10)) {
-        speed = speed * -1
+        speedX = speedX * -1
     } else if (ballX > 300) {
-        speed = speed * -1
+        speedX = speedX * -1
+        ballY = ballY + speedY
+        speedY = speedY* -1
         score++
     } else if (ballX < 0) {
-        speed = 0
+        speedX = 0
+        speedY = 0
         userLost = true
     }
 }
